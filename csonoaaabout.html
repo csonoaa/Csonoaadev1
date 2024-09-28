@@ -7,22 +7,83 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="csonoaaabout.html">About Us</a></li>
-                <li><a href="csonoaaservices.html">Services</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+    <nav id="nav" class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo-wrapper">
+                <img
+                    class="logo-img"
+                    src="https://github.com/csonoaa/CsonoaaIMG1/blob/main/Csonoaalogo.PNG?raw=true"
+                    alt="Csonoaa logo"
+                    width="160"
+                    height="29.44"
+                />
+            </a>
+            <div class="menu-wrapper">
+                <div class="mobile-wrapper">
+                    <div class="mobile-mobile-head">
+                        <a href="index.html" class="logo-wrapper">
+                            <img
+                                class="logo-img"
+                                src="https://github.com/csonoaa/CsonoaaIMG1/blob/main/Csonoaalogo.PNG?raw=true"
+                                alt="Csonoaa logo"
+                                width="160"
+                                height="29.44"
+                            />
+                        </a>
+                        <button
+                            class="icon-btn"
+                            aria-label="Close Menu"
+                            onclick="nav.classList.remove('open')"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                            >
+                            </svg>
+                        </button>
+                    </div>
+                    <menu class="menu">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="csonoaaabout.html" class="nav-link">About</a></li>
+                        <li><a href="csonoaaservices.html" class="nav-link">Services</a></li>
+                        <li><a href="csonoaaappointments.html" class="nav-link">Appointments</a></li>
+                        <li><a href="csonoaacontact.html" class="nav-link">Contact</a></li>
+                    </menu>
+                </div>
+
+                <div class="actions">
+                    <a href="#" class="button-link">Login</a>
+                    <a href="#" class="button-link primary">Get started</a>
+                </div>
+            </div>
+
+            <button
+                class="icon-btn"
+                aria-label="Open Menu"
+                onclick="nav.classList.add('open')"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                >
+                    <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <main class="main">
         <section class="about">
             <h1>About Csonoaa</h1>
             <p>At Csonoaa, we are dedicated to providing top-notch digital solutions. Founded in 2024, we specialize in creating customized websites and apps, managing social media platforms, and offering appointment scheduling services.</p>
             <p>Our team of experts works closely with clients to deliver tailored solutions that meet their business needs and goals.</p>
         </section>
     </main>
+
     <footer>
         <p>Contact us: <a href="mailto:gamingwithsonoaa@gmail.com">gamingwithsonoaa@gmail.com</a></p>
         <p>&copy; 2024 Csonoaa. All rights reserved.</p>
