@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,59 +8,135 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <header>
-        <nav class="icon-navbar">
-            <a href="index.html" class="hexagon">
-                <span class="icon">🖥️</span>
-                <span class="tooltip">Home</span>
+    <nav id="nav" class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo-wrapper">
+                <img
+                    class="logo-img"
+                    src=https://github.com/csonoaa/CsonoaaIMG1/blob/main/Csonoaalogo.PNG?raw=true
+                    alt="Csonoaa logo"
+                    width="160"
+                    height="29.44"
+                />
             </a>
-            <a href="csonoaaabout.html" class="hexagon">
-                <span class="icon">🧬</span>
-                <span class="tooltip">About</span>
-            </a>
-            <a href="csonoaaservices.html" class="hexagon">
-                <span class="icon">📱</span>
-                <span class="tooltip">Appointments</span>
-            </a>
-            <a href="csonoaaappointments.html" class="hexagon">
-                <span class="icon">🖨️</span>
-                <span class="tooltip">Contact</span>
-            </a>
-            <a href="csonoaacontact.html" class="hexagon">
-                <span class="icon">🕰️</span>
-                <span class="tooltip">Business Hours</span>
-            </a>
-        </nav>
-    </header>
+            <div class="menu-wrapper">
+                <div class="mobile-wrapper">
+                    <div class="mobile-mobile-head">
+                        <a href="index.html" class="logo-wrapper">
+                            <img
+                                class="logo-img"
+                                src=https://github.com/csonoaa/CsonoaaIMG1/blob/main/Csonoaalogo.PNG?raw=true
+                                alt="Csonoaa logo"
+                                width="160"
+                                height="29.44"
+                            />
+                        </a>
+                        <button
+                            class="icon-btn"
+                            aria-label="Close Menu"
+                            onclick="nav.classList.remove('open')"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                            >
+                               
+                            </svg>
+                        </button>
+                    </div>
+                    <menu class="menu">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="csonoaaabout.html" class="nav-link">About</a></li>
+                        <li><a href="csonoaaservices.html" class="nav-link">Services</a></li>
+                        <li><a href="csonoaaappointments.html" class="nav-link">Appointments</a></li>
+                        <li><a href="csonoaacontact.html" class="nav-link">Contact</a></li>
+                    </menu>
+                </div>
 
-    <!-- Main Section with Intro and Background Images -->
-    <section class="main-intro">
-        <h1>Welcome to Csonoaa</h1>
-        <p>
-            Csonoaa is your one-stop solution for web and app development, social media management, and online service integration for businesses. Founded in 2024, we provide professional solutions tailored to fit your business needs, whether you’re in the automotive, restaurant, salon, or other service industries.
-        </p>
-        <p>Our goal is to help you streamline your online presence and grow your brand.</p>
-    </section>
+                <div class="actions">
+                    <a href="#" class="button-link">Login</a>
+                    <a href="#" class="button-link primary">Get started</a>
+                </div>
+            </div>
 
-    <!-- Image Section with Blur and Floating Effect -->
-    <section class="image-section">
-        <img src="https://raw.githubusercontent.com/csonoaa/CsonoaaIMG1/main/DALL%C2%B7E%202024-09-17%2000.56.28%20-%20A%20modern%20web%20design%20showcase%20displayed%20across%20multiple%20devices%20such%20as%20a%20laptop%2C%20tablet%2C%20and%20smartphone.%20The%20website%20features%20a%20clean%20layout%20with%20a%20fo.webp" alt="Modern Web Design Showcase">
-        <img src="https://raw.githubusercontent.com/csonoaa/CsonoaaIMG1/main/DALL%C2%B7E%202024-09-17%2000.53.26%20-%20A%20sleek%20and%20modern%20web%20design%20showcase%20with%20multiple%20sections%20displayed.%20The%20layout%20features%20a%20clean%20white%20background%20with%20minimalist%20navigation%20eleme.webp" alt="Sleek and Modern Web Design Showcase">
-    </section>
+            <button
+                class="icon-btn"
+                aria-label="Open Menu"
+                onclick="nav.classList.add('open')"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                >
+                    <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
 
-    <!-- Additional Text -->
-    <section class="additional-text">
-        <h2>Our Approach</h2>
-        <p>
-            At Csonoaa, we believe in simplicity, efficiency, and excellence. Our team of developers works tirelessly to ensure that your online presence is not just a website, but a complete digital experience that engages your audience and elevates your brand.
-        </p>
-        <p>
-            Whether you're looking for a website, mobile app, or social media management, we are here to help you succeed. Let's work together to build your digital future.
-        </p>
-    </section>
+    <main class="main">
+        <section class="hero">
+            <div class="hero-visual">
+                <div class="hero-visual-wrapper">
+                    <img src="https://raw.githubusercontent.com/csonoaa/CsonoaaIMG1/main/DALL%C2%B7E%202024-09-17%2000.56.28%20-%20A%20modern%20web%20design%20showcase%20displayed%20across%20multiple%20devices%20such%20as%20a%20laptop%2C%20tablet%2C%20and%20smartphone.%20The%20website%20features%20a%20clean%20layout%20with%20a%20fo.webp" alt="Modern Web Design Showcase" />
+                    <img src="https://raw.githubusercontent.com/csonoaa/CsonoaaIMG1/main/DALL%C2%B7E%202024-09-17%2000.53.26%20-%20A%20sleek%20and%20modern%20web%20design%20showcase%20with%20multiple%20sections%20displayed.%20The%20layout%20features%20a%20clean%20white%20background%20with%20minimalist%20navigation%20eleme.webp" alt="Sleek and Modern Web Design Showcase" />
+                </div>
+            </div>
 
-    <!-- Footer with Contact Info -->
+            <div class="hero-content">
+                <header class="hero-header">
+                    <div class="headline1">
+                        <span class="headline-container">
+                            <div class="headline-scroller">
+                                <span class="scroll-item">WE DESIGN WE DEVELOP AND YOU DOMINATE</span>
+                                <span class="scroll-item"> Increase Customers</span>
+                                <span class="scroll-item"> Easy Payment</span>
+                            </div>
+                        </span>
+
+                        <span> with Csonoaa Services </span>
+                    </div>
+                    <div class="content-actions">
+                        <a href="#" class="button-link primary">Get started</a>
+                    </div>
+                </header>
+                <a href="#" aria-label="Scroll" class="scroll-btn">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                    >
+                        <path
+                            d="M13.0001 16.1716L18.3641 10.8076L19.7783 12.2218L12.0001 20L4.22192 12.2218L5.63614 10.8076L11.0001 16.1716V4H13.0001V16.1716Z"
+                        ></path>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <section class="main-intro">
+            <h1>Welcome to Csonoaa</h1>
+            <p>
+                Csonoaa is your one-stop solution for web and app development, social media management, and online service integration for businesses. Founded in 2024, we provide professional solutions tailored to fit your business needs, whether you’re in the automotive, restaurant, salon, or other service industries.
+            </p>
+            <p>Our goal is to help you streamline your online presence and grow your brand.</p>
+        </section>
+
+        <section class="additional-text">
+            <h2>Our Approach</h2>
+            <p>
+                At Csonoaa, we believe in simplicity, efficiency, and excellence. Our team of developers works tirelessly to ensure that your online presence is not just a website, but a complete digital experience that engages your audience and elevates your brand.
+            </p>
+            <p>
+                Whether you're looking for a website, mobile app, or social media management, we are here to help you succeed. Let's work together to build your digital future.
+            </p>
+        </section>
+    </main>
+
     <footer>
         <p>&copy; 2024 Csonoaa. All Rights Reserved.</p>
         <p>Contact: <a href="mailto:gamingwithsonoaa@gmail.com">gamingwithsonoaa@gmail.com</a></p>
