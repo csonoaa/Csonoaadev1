@@ -5,38 +5,274 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Csonoaa - Services</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar styles (from your provided code) */
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: #000;
+        }
+
+        .logo-wrapper img {
+            width: 160px;
+            height: 29.44px;
+        }
+
+        .menu-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        .mobile-wrapper .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .menu li {
+            list-style: none;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #00ff7f;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .nav-link:hover {
+            color: #fff;
+        }
+
+        .actions .button-link {
+            text-decoration: none;
+            margin-left: 1rem;
+            color: white;
+        }
+
+        .button-link.primary {
+            background-color: #00ff7f;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .icon-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .icon-btn svg {
+            fill: #00ff7f;
+        }
+
+        /* Main content styles */
+        main {
+            padding: 2rem;
+            background-color: #f4f4f4;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .service-sections {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Section Styles */
+        .section {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            border-radius: 10px 10px 0 0;
+        }
+
+        /* Service Cards */
+        .service-card {
+            display: inline-block;
+            width: 45%;
+            margin: 1.5%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .service-card h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #00ff7f;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="csonoaaabout.html">About Us</a></li>
-                <li><a href="csonoaaservices.html">Services</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav id="nav" class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo-wrapper">
+                <img
+                    class="logo-img"
+                    src="https://github.com/csonoaa/CsonoaaIMG1/blob/main/Csonoaalogo.PNG?raw=true"
+                    alt="Csonoaa logo"
+                    width="160"
+                    height="29.44"
+                />
+            </a>
+            <div class="menu-wrapper">
+                <div class="mobile-wrapper">
+                    <div class="mobile-mobile-head">
+                        <a href="index.html" class="logo-wrapper">
+                            <img
+                                class="logo-img"
+                                src="https://github.com/csonoaa/CsonoaaIMG1/blob/main/Csonoaalogo.PNG?raw=true"
+                                alt="Csonoaa logo"
+                                width="160"
+                                height="29.44"
+                            />
+                        </a>
+                        <button
+                            class="icon-btn"
+                            aria-label="Close Menu"
+                            onclick="nav.classList.remove('open')"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                            >
+                            </svg>
+                        </button>
+                    </div>
+                    <menu class="menu">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="csonoaaabout.html" class="nav-link">About</a></li>
+                        <li><a href="csonoaaservices.html" class="nav-link">Services</a></li>
+                        <li><a href="csonoaaappointments.html" class="nav-link">Appointments</a></li>
+                        <li><a href="csonoaacontact.html" class="nav-link">Contact</a></li>
+                    </menu>
+                </div>
+
+                <div class="actions">
+                    <a href="#" class="button-link">Login</a>
+                    <a href="#" class="button-link primary">Get started</a>
+                </div>
+            </div>
+
+            <button
+                class="icon-btn"
+                aria-label="Open Menu"
+                onclick="nav.classList.add('open')"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                >
+                    <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
     <main>
-        <section class="services">
+        <section class="service-sections">
             <h1>Our Services</h1>
-            <div class="service">
-                <h2>Website Development</h2>
-                <p>Starting at $1,500 for a basic website. Delivery time: 4-6 weeks. Rush service available for an additional 20% fee.</p>
+
+            <!-- Web Development Services Section -->
+            <div class="section">
+                <h2>Web Development Services</h2>
+
+                <div class="service-card">
+                    <h3>Website Development</h3>
+                    <p>Starting at $1,500 for a basic website. Delivery time: 4-6 weeks. Rush service available for an additional 20% fee.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>App Development</h3>
+                    <p>Starting at $3,000 for a basic app. Delivery time: 6-8 weeks. Rush service available for an additional 25% fee.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Social Media Management</h3>
+                    <p>Starting at $500 per month. Includes account setup, content creation, and engagement management.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Appointment Scheduling Solutions</h3>
+                    <p>Starting at $800 for a basic scheduling system. Delivery time: 2-4 weeks. Rush service available for an additional 15% fee.</p>
+                </div>
             </div>
-            <div class="service">
-                <h2>App Development</h2>
-                <p>Starting at $3,000 for a basic app. Delivery time: 6-8 weeks. Rush service available for an additional 25% fee.</p>
-            </div>
-            <div class="service">
-                <h2>Social Media Management</h2>
-                <p>Starting at $500 per month. Includes account setup, content creation, and engagement management.</p>
-            </div>
-            <div class="service">
-                <h2>Appointment Scheduling Solutions</h2>
-                <p>Starting at $800 for a basic scheduling system. Delivery time: 2-4 weeks. Rush service available for an additional 15% fee.</p>
+
+            <!-- Other Services Section -->
+            <div class="section">
+                <h2>Other Services</h2>
+
+                <div class="service-card">
+                    <h3>Essay Writing</h3>
+                    <p>Starting at $20 per page. Services include proofreading, editing, and formatting. Delivery time: 1-2 days depending on length and complexity.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Homework Help</h3>
+                    <p>Offering assistance with a variety of subjects including math, science, and history. Starting at $30 per hour.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Live Tutoring</h3>
+                    <p>One-on-one virtual tutoring sessions. Available for subjects such as English, math, and coding. Starting at $40 per hour.</p>
+                </div>
             </div>
         </section>
     </main>
+
     <footer>
         <p>Contact us: <a href="mailto:gamingwithsonoaa@gmail.com">gamingwithsonoaa@gmail.com</a></p>
         <p>&copy; 2024 Csonoaa. All rights reserved.</p>
